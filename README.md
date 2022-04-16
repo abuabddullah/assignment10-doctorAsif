@@ -1,6 +1,6 @@
-# Welcome to **Burger's Hub**
+# Welcome to **Doctor Asif**
 
-Project Repo Link: [https://github.com/programming-hero-web-course-4/product-analysis-website-abuabddullah](https://github.com/programming-hero-web-course-4/product-analysis-website-abuabddullah) \
+Project Repo Link: [https://github.com/programming-hero-web-course-4/independent-service-provider-abuabddullah](https://github.com/programming-hero-web-course-4/independent-service-provider-abuabddullah) \
 Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netlify.app/) 
 
 
@@ -83,7 +83,7 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 [ NOT DONE ] \
 **_2) use any icon in the page_** \
 [ NOT DONE ] \
-**_3) extra routes add করা_** \
+**_3) Allow creation of multiple accounts with the same email address (is optional)_** \
 [ NOT DONE ] \
-**_4) conditional rendering use করা_** \
+**_4) Add some mouseover animation while taking the mouse on the services card_** \
 [ NOT DONE ] \
