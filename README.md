@@ -19,7 +19,7 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 ### [#] compulsory requirements:
 **_1) একটা individual service provider হতে হবে। যেমনঃ ডাক্তার+youtuber_** \
 [ NOT DONE ] \
-**_2) Home page এ কয়েকটা part বাঁ section থাকতে হবে_** \ [navigation-menubar,banner or carousel slider, services(এখানে এই person টার ৩-৬টা service দিচ্ছে তার name,price,image,short-description,a button থাকবে ), footer] 
+**_2) Home page এ কয়েকটা part বাঁ section থাকতে হবে_** \ [navigation-menubar,banner or carousel slider, services(এখানে এই person টার ৩-৬টা service(psychiatrist,family doctor,chamber,diet,fitness,youtube) দিচ্ছে তার name,price,image,short-description,a button থাকবে ), footer] 
 [ NOT DONE ] \
 **_3) Home page এর Services section এর button এ click করলে আমাকে checkout page এ নিয়ে যাবে কিন্তু কিন্তু এই checkout page টা থাকবে protected-route হিসেবে অর্থাৎ user login করা না থাকলে তাকে checkout page এ ঢুকতে দিবে না_** \
 [ NOT DONE ] \

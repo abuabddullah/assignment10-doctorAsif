@@ -1,0 +1,44 @@
+[
+    {
+      "id": "625b38265063c51c8f3f330e",
+      "picture": "./resources/servicesImg/psychiatrist.jpg",
+      "price": 500,
+      "name": "Personal Psychiatrist",
+      "about": "Magna quis enim laborum ut eu deserunt esse enim sint culpa qui amet. In culpa minim consectetur Lorem ut sunt anim sunt ullamco aliqua ad est. Ullamco esse ipsum exercitation ipsum cupidatat nisi esse excepteur irure pariatur veniam aute fugiat. Velit voluptate labore irure nulla minim non ut duis dolor commodo enim. Lorem laborum cillum et aute proident duis laboris reprehenderit dolor elit non officia aliqua ad. Sunt labore commodo nulla et voluptate ipsum et voluptate aliqua fugiat adipisicing deserunt. Velit do commodo aliqua elit sit incididunt nostrud deserunt exercitation in aliquip esse.\r\n"
+    },
+    {
+      "id": "625b3826393248bc0b0a0106",
+      "picture": "./resources/servicesImg/familyDoctor.jpg",
+      "price": 1000,
+      "name": "Family Doctor",
+      "about": "Cupidatat nulla ad Lorem magna eu sunt amet anim consectetur reprehenderit quis cupidatat Lorem. Pariatur exercitation aute velit sunt mollit do sint Lorem ipsum aliquip et. Irure laboris mollit excepteur duis nisi enim Lorem cupidatat minim. Velit ad nisi mollit quis minim dolor quis. Qui aute exercitation qui id deserunt enim Lorem amet Lorem. Ea duis sunt officia id ea do ut veniam laborum ex. Esse elit excepteur veniam adipisicing ipsum mollit.\r\n"
+    },
+    {
+      "id": "625b38268ee50fdeface4d82",
+      "picture": "./resources/servicesImg/chamber.jpg",
+      "price": 500,
+      "name": "Chamber",
+      "about": "Enim qui aute enim amet laborum commodo deserunt magna amet. Enim ea mollit sint non est aliqua nulla sunt in. Cupidatat ut laborum proident ipsum. Sit voluptate qui occaecat occaecat adipisicing elit dolore incididunt cillum.\r\n"
+    },
+    {
+      "id": "625b382689653da5b0e7ba39",
+      "picture": "./resources/servicesImg/dietCouch.jpg",
+      "price": 100,
+      "name": "Diet Couch",
+      "about": "Adipisicing nisi fugiat duis dolore laboris nulla veniam. Deserunt commodo excepteur fugiat laborum nostrud occaecat cupidatat. Enim mollit excepteur sunt magna consequat anim sunt amet. Laborum occaecat laboris ullamco Lorem ea commodo nisi.\r\n"
+    },
+    {
+      "id": "625b3826eb65f6ab87c8583e",
+      "picture": "./resources/servicesImg/fitnessCouch.jpg",
+      "price": 100,
+      "name": "Fitness Couch",
+      "about": "Ut esse amet nisi sint voluptate. Quis ad commodo velit minim duis dolor dolore. Ea eiusmod Lorem id velit non sit fugiat fugiat commodo occaecat id in ipsum culpa. Ullamco sint id aliquip consequat elit proident et ea do do proident proident. Eiusmod non reprehenderit qui laboris in. Cupidatat minim et Lorem et et aliquip culpa. Reprehenderit sunt nulla et amet cillum occaecat reprehenderit tempor est ipsum est.\r\n"
+    },
+    {
+      "id": "625b382648498c7fcc9b97ec",
+      "picture": "./resources/servicesImg/youtubeHealth.jpg",
+      "price": 0,
+      "name": "Yutube Health Guidelines",
+      "about": "Cillum minim nostrud do elit reprehenderit exercitation labore nisi sint. Commodo eiusmod cupidatat cupidatat proident consectetur do qui ex magna dolore duis do est. Aliquip ut deserunt irure proident consectetur excepteur ipsum. Aliquip amet consequat amet anim duis commodo esse magna.\r\n"
+    }
+  ]

@@ -2,8 +2,7 @@ import './Footer.css'
 import React from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -32,19 +31,29 @@ const Footer = () => {
 
                     <div className="col-12 col-md-4 order-3 order-md-1">
                         <h3 className="my-3">About</h3>
-                        <hr className='w-50' style={{ color: "#F98080", height:"2px"  }} />
+                        <hr className='w-50' style={{ color: "#F98080", height: "2px" }} />
                         <p className='text-justify w-75'>Passionate about medication and find always your well wisher. Spread the moto of, "Be healthy, Be happy, Be rich"</p>
 
                         <div className=''>
-                            <FontAwesomeIcon className='icons' icon={faCartShopping} />
-                            <FontAwesomeIcon className='icons' icon={faCartShopping} />
-                            <FontAwesomeIcon className='icons' icon={faCartShopping} />
-                            <FontAwesomeIcon className='icons' icon={faCartShopping} />
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                            <Link to='/facebook' className='icons'><FaFacebookSquare /></Link></li>
+                                <li class="list-inline-item">
+                                <Link to='/twitter' className='icons'><FaTwitterSquare /></Link></li>
+                                <li class="list-inline-item">
+                                <Link to='/youtube' className='icons'><FaYoutubeSquare /></Link></li>
+                                <li class="list-inline-item">
+                                <Link to='/instagram' className='icons'><FaInstagramSquare /></Link></li>
+                            </ul>
+                            
+                            
+                            
+
                         </div>
                     </div>
                     <div className="col-12 col-md-4 order-2">
                         <h3 className="my-3">Quick Links</h3>
-                        <hr className='w-50' style={{ color: "#F98080", height:"2px"  }} />
+                        <hr className='w-50' style={{ color: "#F98080", height: "2px" }} />
                         <ul className="list-unstyled">
                             <li><Link className='text-decoration-none text-dark' to='/onlinecouch'>About online Couch</Link></li>
                             <li><Link className='text-decoration-none text-dark' to='/blogs'>Read my blogs</Link></li>
@@ -54,7 +63,7 @@ const Footer = () => {
                     </div>
                     <div className="col-12 col-md-4 order-1 order-md-3">
                         <h3 className="my-3">Contacts</h3>
-                        <hr className='w-50' style={{ color: "#F98080", height:"2px"  }} />
+                        <hr className='w-50' style={{ color: "#F98080", height: "2px" }} />
                         <ul className="list-unstyled">
                             <li>Bangladesh</li>
                             <li>+880-1939032974</li>

@@ -16,8 +16,8 @@ const Banner = () => {
                                 <span className="visually-hidden">New alerts</span>
                             </span>
                         </div>
-                        <h5 className="card-title fw-bold">Dr. Asif A Owadud</h5>
-                        <p className="card-text mb-0 mt-3">Dentist, Dental Surgeon</p>
+                        <h3 className="card-title fw-bold">Dr. Asif A Owadud</h3>
+                        <p className="card-text mb-0 mt-3">Psychiatrist , Mental Surgeon</p>
                         <p className="card-text">Dhaka, Bangladesh</p>
                     </div>
                 </div>
