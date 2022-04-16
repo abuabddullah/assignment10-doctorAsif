@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.bg-footer {
+  background-color: #d9f3ed;
+}
+.bg-footer-subscribeField {
+  background-color: #b0dfd4;
+}

@@ -6,10 +6,11 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 
 
 ## Projects summary:
-* To Explore About Burger's Hub : Customer's feedback, Reviews, Contact, About
-* To Learn About Some Basic of HTML and React
-* To Explore the Monthly investment,revenue and sell
-* To Know How to apply React-router in a project
+* **summary1**
+* **summary2**
+* **summary3**
+* **summary4**
+* **summary5**
 
 
 
@@ -18,11 +19,11 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 ### [#] compulsory requirements:
 **_1) একটা individual service provider হতে হবে। যেমনঃ ডাক্তার+youtuber_** \
 [ NOT DONE ] \
-**_2) Home page এ কয়েকটা part বাঁ section থাকতে হবে_** \[navigation-menubar,banner or carousel slider, services(এখানে এই person টার ৩-৬টা service দিচ্ছে তার name,price,image,short-description,a button থাকবে ), footer] 
+**_2) Home page এ কয়েকটা part বাঁ section থাকতে হবে_** \ [navigation-menubar,banner or carousel slider, services(এখানে এই person টার ৩-৬টা service দিচ্ছে তার name,price,image,short-description,a button থাকবে ), footer] 
 [ NOT DONE ] \
 **_3) Home page এর Services section এর button এ click করলে আমাকে checkout page এ নিয়ে যাবে কিন্তু কিন্তু এই checkout page টা থাকবে protected-route হিসেবে অর্থাৎ user login করা না থাকলে তাকে checkout page এ ঢুকতে দিবে না_** \
 [ NOT DONE ] \
-**_4) Checkout page এ কিছু component থাকতে হবে (plz check optional requirements)_** \ : [Name, Review, Rating, Pic, Id]
+**_4) Checkout page এ কিছু component থাকতে হবে (plz check optional requirements)_** \ 
 [ NOT DONE ] \
 **_5) Protected page এ reload দিলে যাতে আবার login page এ নিয়ে না যায় (অর্থাৎ RequireAuth component এ Loading component use করতে হবে)_**  : \
 [ NOT DONE ] \
@@ -33,9 +34,9 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 **_8) navigation-menubar এ একটা rout থাকবে Blogs নামের এটা protected হবে না সেখানে ৩টা প্রশ্নের উত্তর দিতে হবে_** \
 [ NOT DONE ] \
 
-                => Difference between authorization and authentication?
-                => Why are you using firebase? What other options do you have to implement authentication?
-                => What other services does firebase provide other than authentication?                  
+        => Difference between authorization and authentication?
+        => Why are you using firebase? What other options do you have to implement authentication?
+        => What other services does firebase provide other than authentication?                  
 
 
 **_9) navigation-menubar এ একটা rout থাকবে About নামের এটা protected হবে না সেখানে আমার নিজের একটা professional pic থাকবে আর ৩-৫ লাইনের ভিতরে আমার gola টা describe করা থাকতে হবে_** \
@@ -43,6 +44,8 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 **_10) একটা 404NotFound componetnt থাকতে হবে_** \
 [ NOT DONE ] \
 **_11) Minimum 9 meaningfull git commit থাকতে হবে_** \
+[ NOT DONE ] \
+**_12) Website এর একটা meaning full নাম দিতে হবে আর সেটাকে title bar এ দেখাতে হবে_** \
 [ NOT DONE ] \
 
 
