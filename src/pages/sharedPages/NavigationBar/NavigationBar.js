@@ -41,7 +41,7 @@ const NavigationBar = () => {
                         height="30"
                         className="d-inline-block align-top rounded-circle me-2"
                     />{' '}
-                    Doctor Asif
+                    <strong>Doctor Asif</strong>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
