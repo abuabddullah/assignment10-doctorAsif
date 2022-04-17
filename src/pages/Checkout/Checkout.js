@@ -2,14 +2,32 @@ import React from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { Outlet, useLocation } from 'react-router-dom';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Checkout = () => {
     const location = useLocation();
     const { pathname } = location;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(e.target);
+        let selectedService = e.target.elements.selectOptionForm.value;
+        let userName = e.target.elements.name.value;
+        let userEmail = e.target.elements.email.value;
+        let userPhone = e.target.elements.phone.value;
+        let userAddress = e.target.elements.address.value;
+
+        if (selectedService && userName && userEmail && userPhone && userAddress) {
+            toast.success('Thak you for the booking!');
+        }
+        
+
+        console.log(selectedService, userName, userEmail, userPhone, userAddress);
+
+
     }
+
+
     return (
 
         <section className='py-5 p-md-5'>
@@ -34,7 +52,8 @@ const Checkout = () => {
 
                             <Form onSubmit={handleSubmit} className='my-4 w-75 mx-auto'>
 
-                                <Form.Select  className="mb-3" size="lg">
+                                <Form.Select name='selectOptionForm' className="mb-3" size="lg" required>
+                                    <option></option>
                                     <option>Personal Psychiatrist Service</option>
                                     <option>Family Doctor Service</option>
                                     <option>Chamber Service</option>
@@ -55,7 +74,7 @@ const Checkout = () => {
                                     label="Email address"
                                     className="mb-3"
                                 >
-                                    <Form.Control type="email" placeholder="name@example.com" name='name' required />
+                                    <Form.Control type="email" placeholder="name@example.com" name='email' required />
                                 </FloatingLabel>
                                 <FloatingLabel
                                     controlId="floatingInput"
@@ -81,7 +100,7 @@ const Checkout = () => {
                         </section>
                     }
 
-
+                    <ToastContainer />
                 </div>
 
             </div>

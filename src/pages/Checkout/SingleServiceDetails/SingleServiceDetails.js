@@ -57,17 +57,31 @@
 
 
 
-import React, { useContext, useEffect, useState } from 'react';
+
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { Services4Context } from '../../../App';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SingleServiceDetails = () => {
     const { id } = useParams();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(e.target);
+        let userName = e.target.elements.name.value;
+        let userEmail = e.target.elements.email.value;
+        let userPhone = e.target.elements.phone.value;
+        let userAddress = e.target.elements.address.value;
+
+        if (userName && userEmail && userPhone && userAddress) {
+            toast.success('Thak you for the booking!');
+        }
+        
+
+        console.log( userName, userEmail, userPhone, userAddress);
+
+
     }
 
     return (
@@ -89,7 +103,7 @@ const SingleServiceDetails = () => {
                     label="Email address"
                     className="mb-3"
                 >
-                    <Form.Control type="email" placeholder="name@example.com" name='name' required />
+                    <Form.Control type="email" placeholder="name@example.com" name='email' required />
                 </FloatingLabel>
                 <FloatingLabel
                     controlId="floatingInput"
@@ -111,6 +125,7 @@ const SingleServiceDetails = () => {
                     </Button>
                 </div>
             </Form>
+            <ToastContainer />
 
         </section>
     );
