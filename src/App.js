@@ -7,7 +7,9 @@ import Checkout from './pages/Checkout/Checkout';
 import SingleServiceDetails from './pages/Checkout/SingleServiceDetails/SingleServiceDetails';
 import useServices from './pages/customHooks/useServices/useServices';
 import Home from './pages/homePages/Home/Home';
+import Loading from './pages/Loading/Loading';
 import Login from './pages/Login-SignUP-RequireAuth/Login/Login';
+import RequireAuth from './pages/Login-SignUP-RequireAuth/RequireAuth/RequireAuth';
 import Signup from './pages/Login-SignUP-RequireAuth/Signup/Signup';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/sharedPages/Footer/Footer';
@@ -32,7 +34,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
 
-          <Route path="/checkout" element={<Checkout />} >
+          <Route path="/checkout" element={
+          <RequireAuth>
+          <Checkout />
+          </RequireAuth>
+          } >
             <Route path=":id" element={<SingleServiceDetails />} />
           </Route>
 
@@ -40,6 +46,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        
 
         <Footer />
 

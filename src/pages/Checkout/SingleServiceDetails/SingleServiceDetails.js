@@ -79,7 +79,7 @@ const SingleServiceDetails = () => {
         }
         
 
-        console.log( userName, userEmail, userPhone, userAddress);
+        // console.log( userName, userEmail, userPhone, userAddress);
 
 
     }

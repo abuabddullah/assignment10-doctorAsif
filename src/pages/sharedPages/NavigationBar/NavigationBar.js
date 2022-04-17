@@ -4,10 +4,32 @@ import { Link, useLocation } from 'react-router-dom';
 import { CustomLink } from './CustomLink';
 
 import logo from './../../../resources/logo.png'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Loading/Loading';
+import { signOut } from 'firebase/auth';
 
 const NavigationBar = () => {
     const location = useLocation();
     const { pathname } = location;
+
+    const [user, loading, error] = useAuthState(auth);
+
+    const logout = () => {
+        signOut(auth);
+        toast.success('Logged out successfully');
+    };
+
+    if (error) {
+        toast.error(error.message);
+    }
+
+    if (loading) {
+        return <Loading />
+    }
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Container>
@@ -38,10 +60,14 @@ const NavigationBar = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link as={CustomLink} to="/blogs">Blogs</Nav.Link>
-                        <Nav.Link eventKey={2} as={CustomLink} to="/login">
-                            Log in
-                        </Nav.Link>
+                        {
+                            user ? <Nav.Link style={{cursor: "pointer" }} onClick={logout}>Logout</Nav.Link> : <Nav.Link eventKey={2} as={CustomLink} to="/login">
+                                Log in
+                            </Nav.Link>
+                        }
+
                     </Nav>
+                    <ToastContainer />
                 </Navbar.Collapse>
             </Container>
         </Navbar>

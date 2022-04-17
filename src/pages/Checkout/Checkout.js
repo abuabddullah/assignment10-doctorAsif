@@ -22,7 +22,7 @@ const Checkout = () => {
         }
         
 
-        console.log(selectedService, userName, userEmail, userPhone, userAddress);
+        // console.log(selectedService, userName, userEmail, userPhone, userAddress);
 
 
     }
