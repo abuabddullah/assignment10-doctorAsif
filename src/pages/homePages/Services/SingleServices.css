@@ -1,3 +1,20 @@
 .cursor-pointer{
     cursor: pointer;
 }
+.onHover:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.onHover img{
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.233);
+    transition: all 0.3s ease-in-out;
+}
+.onHover img:hover{
+    transform: scale(1.1);
+}
+
+.btn-minH {
+    min-height: 65px;
+}
