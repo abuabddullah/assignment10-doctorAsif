@@ -4,7 +4,7 @@ import location from './../../../resources/location.PNG'
 const Location = () => {
     return (
         <section className='py-5 p-md-5'>
-            <div className="container  my-5">
+            <div className="container mb-5">
                 <div className="sectionHeading text-center mb-5">
                     <h2>Get Me Here</h2>
                     <hr className="w-25 mx-auto" style={{ color: "#F98080", height: "2px" }} />

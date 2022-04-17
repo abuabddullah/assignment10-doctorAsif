@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
-import useServices from '../../useServices/useServices';
+import useServices from '../../customHooks/useServices/useServices';
 import SingleServices from './SingleServices';
 
 const Services = () => {

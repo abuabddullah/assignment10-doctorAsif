@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { CustomLink } from './CustomLink';
 
 import logo from './../../../resources/logo.png'
 
 const NavigationBar = () => {
+    const location = useLocation();
+    const { pathname } = location;
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Container>
@@ -23,7 +25,7 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link as={CustomLink} to="/">Home</Nav.Link>
-                        <Nav.Link as={CustomLink} to="/checkout">Checkout</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/checkout">{pathname.includes('/checkout/') ? "Cancel Checkout" : "Checkout"}</Nav.Link>
                         <NavDropdown title="Services" id="collasible-nav-dropdown">
                             <NavDropdown.Item as={CustomLink} to="/services/psychiatrist">Personal Psychiatrist</NavDropdown.Item>
                             <NavDropdown.Item as={CustomLink} to="/services/familydoctor">Family Doctor</NavDropdown.Item>
