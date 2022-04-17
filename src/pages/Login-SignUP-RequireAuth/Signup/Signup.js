@@ -27,7 +27,7 @@ const Signup = () => {
     const [updateProfile, updating, error4UpdateProfile] = useUpdateProfile(auth);
 
     if (error || error4Google) {
-        toast.error(error.message);
+        toast.error(error?.message);
     }
 
     if (loading || loading4Google) {
@@ -63,7 +63,6 @@ const Signup = () => {
 
     const handleGoogleSignIn = () => {
         signInWithGoogle()
-        toast.success('Signup Successful');
     }
 
 

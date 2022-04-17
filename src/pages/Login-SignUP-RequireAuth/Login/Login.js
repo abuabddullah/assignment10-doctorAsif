@@ -34,7 +34,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     if (error || error4Google || error4PasswordReset) {
-        toast.error(error.message);
+        toast.error(error?.message);
     }
 
     if (loading || loading4Google || sending4PasswordReset) {
@@ -62,8 +62,7 @@ const Login = () => {
     }
 
     const handleGoogleSignIn = () => {
-        signInWithGoogle()
-        toast.success('Signup Successful');
+        signInWithGoogle();
     }
 
 
