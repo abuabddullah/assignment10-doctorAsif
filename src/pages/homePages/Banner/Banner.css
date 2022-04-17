@@ -1,5 +1,8 @@
-#banner {
-
+.FaCheck {
+background: rgb(115, 214, 49);
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .myImg {

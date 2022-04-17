@@ -1,6 +1,7 @@
 import './Banner.css';
 import React from 'react';
 import myImg from './../../../resources/RC-1280.jpg'
+import { FaCheck } from "react-icons/fa";
 
 const Banner = () => {
     return (
@@ -12,8 +13,8 @@ const Banner = () => {
                         <div className="imgWraper  position-relative shadow-lg d-inline-block p-4 rounded-circle mb-4">
                             <img src={myImg} alt="myImg" className='img-fluid rounded-circle myImg' />
 
-                            <span className="position-absolute top-100 start-50 translate-middle p-2 bg-danger border border-light rounded-circle">
-                                <span className="visually-hidden">New alerts</span>
+                            <span className="position-absolute top-100 start-50 translate-middle p-1 FaCheck border border-light rounded-circle">
+                            <FaCheck/>
                             </span>
                         </div>
                         <h3 className="card-title fw-bold">Dr. Asif A Owadud</h3>

@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaInstagramSquare }
 
 const Footer = () => {
     return (
-        <footer className='bg-footer p-5 pb-4'>
+        <footer className='bg-footer py-5 p-md-5 pb-4'>
             <div className="container">
                 <div className="rounded-3 p-4 bg-footer-subscribeField row justify-content-between mb-5">
                     <div className="col-12 col-md-6">
@@ -35,14 +35,14 @@ const Footer = () => {
                         <p className='text-justify w-75'>Passionate about medication and find always your well wisher. Spread the moto of, "Be healthy, Be happy, Be rich"</p>
 
                         <div className=''>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
+                            <ul className="list-inline">
+                                <li className="list-inline-item">
                             <Link to='/facebook' className='icons'><FaFacebookSquare /></Link></li>
-                                <li class="list-inline-item">
+                                <li className="list-inline-item">
                                 <Link to='/twitter' className='icons'><FaTwitterSquare /></Link></li>
-                                <li class="list-inline-item">
+                                <li className="list-inline-item">
                                 <Link to='/youtube' className='icons'><FaYoutubeSquare /></Link></li>
-                                <li class="list-inline-item">
+                                <li className="list-inline-item">
                                 <Link to='/instagram' className='icons'><FaInstagramSquare /></Link></li>
                             </ul>
                             

@@ -5,9 +5,9 @@ import SingleServices from './SingleServices';
 
 const Services = () => {
     const { services, setServices } = useServices();
-    console.log(services);
+    // console.log(services);
     return (
-        <section className='p-5'>
+        <section className='py-5 p-md-5'>
             <div className="container  my-5">
                 <div className="sectionHeading text-center mb-5">
                     <h2>My Services</h2>
