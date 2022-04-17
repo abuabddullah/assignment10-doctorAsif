@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGoogle } from "react-icons/fa"; import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
@@ -26,19 +26,24 @@ const Signup = () => {
     const [displayName, setDisplayName] = useState('');
     const [updateProfile, updating, error4UpdateProfile] = useUpdateProfile(auth);
 
-    if (error || error4Google) {
-        toast.error(error?.message);
-    }
+
+    useEffect(() => {
+        if (user || user4Google) {
+            toast.success('Signup Successful');
+            navigate('/')
+        }
+    }, [user, user4Google]);
+
 
     if (loading || loading4Google) {
         return <Loading />
     }
 
-    if (user || user4Google) {
-        toast.success('Signup Successful');
-        navigate('/')
-        console.log(user);
+
+    if (error || error4Google) {
+        toast.error(error?.message);
     }
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGoogle } from "react-icons/fa";
@@ -33,17 +33,21 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    if (error || error4Google || error4PasswordReset) {
-        toast.error(error?.message);
-    }
-
+    
+    useEffect(() => {
+        if (user || user4Google) {
+            toast.success('Logging in Successful', { id: 'login' });
+            navigate(from, { replace: true });
+        }
+    }, [user, user4Google]);
+    
     if (loading || loading4Google || sending4PasswordReset) {
         return <Loading />
     }
 
-    if (user || user4Google) {
-        navigate(from, { replace: true });
-        toast.success('Logging in Successful');
+
+    if (error || error4Google || error4PasswordReset) {
+        toast.error(error?.message);
     }
 
 

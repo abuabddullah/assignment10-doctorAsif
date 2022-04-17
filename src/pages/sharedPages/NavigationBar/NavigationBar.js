@@ -1,3 +1,4 @@
+import './NavigationBar.css'
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
@@ -41,7 +42,7 @@ const NavigationBar = () => {
                         height="30"
                         className="d-inline-block align-top rounded-circle me-2"
                     />{' '}
-                    <strong>Doctor Asif</strong>
+                    <strong className='user-select-none fontLogo'>Doctor Asif</strong>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

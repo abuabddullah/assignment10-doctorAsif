@@ -4,6 +4,7 @@ import { createContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './pages/About/About';
+import Blogs from './pages/Blogs/Blogs';
 import Checkout from './pages/Checkout/Checkout';
 import SingleServiceDetails from './pages/Checkout/SingleServiceDetails/SingleServiceDetails';
 import useServices from './pages/customHooks/useServices/useServices';
@@ -43,6 +44,7 @@ function App() {
             <Route path=":id" element={<SingleServiceDetails />} />
           </Route>
 
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
