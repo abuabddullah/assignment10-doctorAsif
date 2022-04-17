@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -12,7 +12,10 @@ import Loading from '../../Loading/Loading';
 const Login = () => {
     const navigate = useNavigate()
 
-    
+    // PasswordReset
+    const emailRef = useRef('');
+    const [sendPasswordResetEmail, sending4PasswordReset, error4PasswordReset] = useSendPasswordResetEmail(auth);
+
     // protecting private route
     let location = useLocation();
     let from = location.state?.from?.pathname || "/";
@@ -30,11 +33,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    if (error || error4Google) {
+    if (error || error4Google || error4PasswordReset) {
         toast.error(error.message);
     }
 
-    if (loading || loading4Google) {
+    if (loading || loading4Google || sending4PasswordReset) {
         return <Loading />
     }
 
@@ -64,6 +67,17 @@ const Login = () => {
     }
 
 
+    const handleResetPassword = async (e) => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        } else {
+            toast('Please enter email');
+        }
+    }
+
+
 
 
 
@@ -82,7 +96,7 @@ const Login = () => {
                         label="Email address"
                         className="mb-3"
                     >
-                        <Form.Control type="email" placeholder="name@example.com" name='email' required />
+                        <Form.Control ref={emailRef} type="email" placeholder="name@example.com" name='email' required />
                     </FloatingLabel>
 
                     <FloatingLabel
@@ -102,7 +116,7 @@ const Login = () => {
 
                     <div className="my-3 text-center">
                         <p>Not Have Account? <Link className='text-decoration-none' to='/signup'>Register now</Link></p>
-                        <p style={{ color: "#0A58CA", cursor: "pointer" }}>Forgot password?</p>
+                        <p onClick={handleResetPassword} style={{ color: "#0A58CA", cursor: "pointer" }}>Forgot password?</p>
                     </div>
                 </Form>
 
