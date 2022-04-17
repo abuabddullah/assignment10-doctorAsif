@@ -2,3 +2,7 @@
     color : #F98080;
     border-bottom: 1px solid #F98080;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}

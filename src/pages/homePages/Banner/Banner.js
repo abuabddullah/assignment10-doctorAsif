@@ -18,10 +18,10 @@ const Banner = () => {
                             </span>
                         </div>
                         <h3 className="card-title fw-bold mt-4">Dr. Asif A Owadud</h3>
-                        <p className="card-text mb-0 mt-3">Psychiatrist , Mental Surgeon</p>
-                        <p className="card-text mb-0">Dhaka, Bangladesh</p>
-                        <p className="card-text mb-0">+880-1939032974</p>
-                        <p className="card-text">asifaowadud@gmail.com</p>
+                        <p className="user-select-none card-text mb-0 mt-3">Psychiatrist , Mental Surgeon</p>
+                        <p className="user-select-none card-text mb-0">Dhaka, Bangladesh</p>
+                        <p className="user-select-none card-text mb-0">+880-1939032974</p>
+                        <p className="user-select-none card-text">asifaowadud@gmail.com</p>
                     </div>
                 </div>
 

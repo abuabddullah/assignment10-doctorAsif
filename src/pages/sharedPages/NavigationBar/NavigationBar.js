@@ -60,6 +60,7 @@ const NavigationBar = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link as={CustomLink} to="/blogs">Blogs</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/about">About</Nav.Link>
                         {
                             user ? <Nav.Link style={{cursor: "pointer" }} onClick={logout}>Logout</Nav.Link> : <Nav.Link eventKey={2} as={CustomLink} to="/login">
                                 Log in
