@@ -5,13 +5,15 @@ import EducationalExpertise from './EducationalExpertise/EducationalExpertise';
 import ExperienceExpertise from './EducationalExpertise/ExperienceExpertise/ExperienceExpertise';
 
 const Expertise = () => {
+
+    // creating states for the tabs
     const [awardsLoaded, setAwardsLoaded] = useState(true);
     const [educationLoaded, setEducationLoaded] = useState(false);
     const [experienceLoaded, setExperienceLoaded] = useState(false);
 
+    // handling toggle of awards, education and experience
     const handleLoading = (e) => {
         const clickedOn = e.target.innerHTML;
-        // console.log(clickedOn);
         if (clickedOn === 'Awards') {
             setAwardsLoaded(true);
             setEducationLoaded(false);
@@ -26,6 +28,7 @@ const Expertise = () => {
             setExperienceLoaded(true);
         }
     }
+
     return (
         <section className='py-5 p-md-5'>
             <div className="container  mb-5">
@@ -50,10 +53,6 @@ const Expertise = () => {
                         {
                             experienceLoaded && <ExperienceExpertise />
                         }
-
-                        {/* <EducationalExpertise /> */}
-                        {/* <AwardsExpertise /> */}
-                        {/* <ExperienceExpertise /> */}
                     </div>
                 </div>
 

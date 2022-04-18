@@ -69,19 +69,7 @@ const SingleServiceDetails = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let userName = e.target.elements.name.value;
-        let userEmail = e.target.elements.email.value;
-        let userPhone = e.target.elements.phone.value;
-        let userAddress = e.target.elements.address.value;
-
-        if (userName && userEmail && userPhone && userAddress) {
-            toast.success('Thak you for the booking!');
-        }
-        
-
-        // console.log( userName, userEmail, userPhone, userAddress);
-
-
+        toast.success('Thak you for the booking!');
     }
 
     return (

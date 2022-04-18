@@ -1,16 +1,30 @@
 # Welcome to **Doctor Asif**
 
 Project Repo Link: [https://github.com/programming-hero-web-course-4/independent-service-provider-abuabddullah](https://github.com/programming-hero-web-course-4/independent-service-provider-abuabddullah) \
-Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netlify.app/) 
+Live Sire link: [https://myassignment-10.web.app/](https://myassignment-10.web.app/) 
 
 
 
-## Projects summary:
-* **summary1**
-* **summary2**
-* **summary3**
-* **summary4**
-* **summary5**
+## Website's different features and functionality (Projects summary):
+* **To know about firebase authentication system for login** : clicking Login from navbar will open login rout. there we login if previously registerd. and try forgot password to reset password through email.  
+* **To know about firebase authentication system for register** : clicking Register in login route will open register rout. there we can register account by email,password if new user. a verification email will be sent
+* **To know about firebase authentication system for google login** : clicking Login with Google button at bellow will open a popup. there we can login with our existing gmail account.
+* **To know about react private route** : Clicking individual service providing by me will direct user to login page if not login yet after successfull login it will redirect user to the checkout page i.e checkout page is wrapped by private routing system 
+* **To know conditional rendering of toggling element depending on user existance** : if user already logged in he or she will see only the Logout button in the nav bar and vice-versa and and also if user dont checkout any service and directly hit **checkout** route from navbar will see a notice "no service selected" and a select option bar bellow but if he alredy selected any service then will see the **service ID** in the notice and **Cancel Checkout** in the navber 
+* To know about me and my goal : In the about route ther is something about me.
+
+
+
+## Technologies I Used:
+        => React js
+        => React Router
+        => React fontawesome
+        => React bootstrap
+        => React Firebase hook
+        => React icons
+        => React toastify
+        => React Leaflet(failed)
+        => React google-map-reacts(failed)
 
 
 
@@ -32,7 +46,7 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 **_7) User login হয়ে গেলে navigation-menubar এর login লিখাটা change হইয়ে logou/signout লিখা আসবে আর সেখানে click করলে logout হইয়ে যাবে_** \
 [ DONE ] \
 **_8) navigation-menubar এ একটা rout থাকবে Blogs নামের এটা protected হবে না সেখানে ৩টা প্রশ্নের উত্তর দিতে হবে_** \
-[ NOT DONE ] \
+[ DONE ] \
 
         => Difference between authorization and authentication?
         => Why are you using firebase? What other options do you have to implement authentication?
@@ -40,7 +54,7 @@ Live Sire link: [https://myassignment9.netlify.app/](https://myassignment9.netli
 
 
 **_9) navigation-menubar এ একটা rout থাকবে About নামের এটা protected হবে না সেখানে আমার নিজের একটা professional pic থাকবে আর ৩-৫ লাইনের ভিতরে আমার gola টা describe করা থাকতে হবে_** \
-[ NOT DONE ] \
+[ DONE ] \
 **_10) একটা 404NotFound componetnt থাকতে হবে_** \
 [ DONE ] \
 **_11) Minimum 9 meaningfull git commit থাকতে হবে_** \

@@ -11,22 +11,8 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let selectedService = e.target.elements.selectOptionForm.value;
-        let userName = e.target.elements.name.value;
-        let userEmail = e.target.elements.email.value;
-        let userPhone = e.target.elements.phone.value;
-        let userAddress = e.target.elements.address.value;
-
-        if (selectedService && userName && userEmail && userPhone && userAddress) {
-            toast.success('Thak you for the booking!');
-        }
-        
-
-        // console.log(selectedService, userName, userEmail, userPhone, userAddress);
-
-
+        toast.success('Thank you for the booking!');
     }
-
 
     return (
 

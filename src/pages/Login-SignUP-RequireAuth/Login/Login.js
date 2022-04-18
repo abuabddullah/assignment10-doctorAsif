@@ -12,7 +12,7 @@ import Loading from '../../Loading/Loading';
 const Login = () => {
     const navigate = useNavigate()
 
-    // PasswordReset
+    // get element PasswordReset from hook
     const emailRef = useRef('');
     const [sendPasswordResetEmail, sending4PasswordReset, error4PasswordReset] = useSendPasswordResetEmail(auth);
 
@@ -20,10 +20,8 @@ const Login = () => {
     let location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    //login with google
+    // get element login with google from hook
     const [signInWithGoogle, user4Google, loading4Google, error4Google] = useSignInWithGoogle(auth);
-
-
 
     // get element from firebase react hook
     const [
@@ -33,43 +31,45 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    
+    // control navigation
     useEffect(() => {
         if (user || user4Google) {
             toast.success('Logging in Successful', { id: 'login' });
             navigate(from, { replace: true });
         }
     }, [user, user4Google]);
-    
+
+    // control loading
     if (loading || loading4Google || sending4PasswordReset) {
         return <Loading />
     }
 
-
+    // control error
     if (error || error4Google || error4PasswordReset) {
         toast.error(error?.message);
     }
 
-
+    // control form after submit button pressed
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(e.target);
+
         let email = e.target.elements.email?.value;
         let password = e.target.elements.password?.value;
 
         if (email && password && password.length >= 6) {
             signInWithEmailAndPassword(email, password)
         } else {
-            toast.error('Please fill all the fields correctly');
+            toast.error('Password must be at least 6 characters long');
             return;
         }
     }
 
+    // control google sign in button
     const handleGoogleSignIn = () => {
         signInWithGoogle();
     }
 
-
+    // control password reset button
     const handleResetPassword = async (e) => {
         const email = emailRef.current.value;
         if (email) {
@@ -79,9 +79,6 @@ const Login = () => {
             toast('Please enter email');
         }
     }
-
-
-
 
 
     return (

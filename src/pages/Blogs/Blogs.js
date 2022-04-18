@@ -9,6 +9,7 @@ const Blogs = () => {
                     <h2>My Blogs</h2>
                     <hr className="w-25 mx-auto" style={{ color: "#F98080", height: "2px" }} />
                 </div>
+
                 <div className='my-5'>
                     <article className='mb-4'>
                         <h3 className='text-md-center mb-3'>
@@ -21,6 +22,7 @@ const Blogs = () => {
                             <strong>Authentication</strong>  is the process of verifying user's identity. It is the process of verifying a user's identification by confirming the user's name/user ID and password.
                         </p>
                     </article>
+
                     <article className='mb-5'>
                         <h3 className='text-md-center mb-3'>
                             Q : Why are you using firebase? What other options do you have to implement authentication?
@@ -41,6 +43,7 @@ const Blogs = () => {
                             <li>Keycloak etc ...</li>
                         </ol>
                     </article>
+                    
                     <article className='mb-5'>
                         <h3 className='text-md-center mb-3'>
                             Q : What other services does firebase provide other than authentication?

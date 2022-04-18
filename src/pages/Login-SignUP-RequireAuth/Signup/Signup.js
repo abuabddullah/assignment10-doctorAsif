@@ -11,7 +11,7 @@ import Loading from '../../Loading/Loading';
 const Signup = () => {
     const navigate = useNavigate()
 
-    //login with google
+    // get element login with google from hook
     const [signInWithGoogle, user4Google, loading4Google, error4Google] = useSignInWithGoogle(auth);
 
     // get element from firebase react hook    
@@ -22,11 +22,11 @@ const Signup = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-
+    // get element from firebase react hook for update profile
     const [displayName, setDisplayName] = useState('');
     const [updateProfile, updating, error4UpdateProfile] = useUpdateProfile(auth);
 
-
+    // control navigation
     useEffect(() => {
         if (user || user4Google) {
             toast.success('Signup Successful');
@@ -34,43 +34,42 @@ const Signup = () => {
         }
     }, [user, user4Google]);
 
-
+    // control loading
     if (loading || loading4Google) {
         return <Loading />
     }
 
-
+    // control error
     if (error || error4Google) {
         toast.error(error?.message);
     }
 
-
+    // control form after submit button pressed
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // console.log(e.target);
+
         let name = e.target.elements.name?.value;
         let email = e.target.elements.email?.value;
         let password = e.target.elements.password?.value;
 
-        if (name && typeof (name) === "string" && email && password && password.length >= 6) {
+        if (name && email && password && password.length >= 6) {
             await createUserWithEmailAndPassword(email, password)
             setDisplayName(name);
             await updateProfile({ displayName: name });
             toast.success('Updated profile');
             toast.success('Signup Successful');
         } else {
-            toast.error('Please fill all the fields correctly');
+            toast.error('Password must be at least 6 characters long');
             return;
         }
 
 
     }
 
+    // control google sign in button
     const handleGoogleSignIn = () => {
         signInWithGoogle()
     }
-
-
 
 
     return (

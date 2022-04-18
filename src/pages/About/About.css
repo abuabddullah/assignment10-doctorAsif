@@ -1,7 +1,7 @@
 .aboutPic {
     height: 500px;
     width: 500px;
-    background: linear-gradient(360deg, rgb(242, 207, 205), #F5F4F0 40%)
+    background: linear-gradient(360deg, rgb(240, 201, 199), #F5F4F0 40%)
 }
 
 @media screen and (max-width: 768px) {
