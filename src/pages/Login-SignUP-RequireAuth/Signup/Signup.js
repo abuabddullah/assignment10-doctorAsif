@@ -29,20 +29,24 @@ const Signup = () => {
     // control navigation
     useEffect(() => {
         if (user || user4Google) {
-            toast.success('Signup Successful');
+            toast.success('Signup Successful & Profile Updated', { id: 'signup' });
             navigate('/')
         }
     }, [user, user4Google]);
+
+    // control error
+    useEffect(() => {
+        if (error || error4Google) {
+            const message = error || error4Google;
+            toast.error(message, { id: 'error' });
+        }
+    }, [error, error4Google]);
 
     // control loading
     if (loading || loading4Google) {
         return <Loading />
     }
 
-    // control error
-    if (error || error4Google) {
-        toast.error(error?.message);
-    }
 
     // control form after submit button pressed
     const handleSubmit = async (e) => {
@@ -56,8 +60,6 @@ const Signup = () => {
             await createUserWithEmailAndPassword(email, password)
             setDisplayName(name);
             await updateProfile({ displayName: name });
-            toast.success('Updated profile');
-            toast.success('Signup Successful');
         } else {
             toast.error('Password must be at least 6 characters long');
             return;

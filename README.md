@@ -6,12 +6,11 @@ Live Sire link: [https://myassignment-10.web.app/](https://myassignment-10.web.a
 
 
 ## Website's different features and functionality (Projects summary):
-* **To know about firebase authentication system for login** : clicking Login from navbar will open login rout. there we login if previously registerd. and try forgot password to reset password through email.  
-* **To know about firebase authentication system for register** : clicking Register in login route will open register rout. there we can register account by email,password if new user. a verification email will be sent
-* **To know about firebase authentication system for google login** : clicking Login with Google button at bellow will open a popup. there we can login with our existing gmail account.
-* **To know about react private route** : Clicking individual service providing by me will direct user to login page if not login yet after successfull login it will redirect user to the checkout page i.e checkout page is wrapped by private routing system 
-* **To know conditional rendering of toggling element depending on user existance** : if user already logged in he or she will see only the Logout button in the nav bar and vice-versa and and also if user dont checkout any service and directly hit **checkout** route from navbar will see a notice "no service selected" and a select option bar bellow but if he alredy selected any service then will see the **service ID** in the notice and **Cancel Checkout** in the navber 
-* **To know about me and my goal** : In the about route ther is something about me.
+* **To know about firebase authentication system for login,register and third party like google sign in.**
+* **To know about the application of react private route in a project**
+* **To know conditional rendering of toggling element depending on user existance**
+* **To know about me and my goal**
+* **To know about Authentication, Authorization, Features of firebase, Alternates of firebase**
 
 
 
