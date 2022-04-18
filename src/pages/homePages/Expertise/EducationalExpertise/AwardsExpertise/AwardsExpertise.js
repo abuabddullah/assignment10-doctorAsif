@@ -16,7 +16,7 @@ const AwardsExpertise = () => {
             </p>
             </article>
             <article>
-            <h6>Best MedicalInfluencer Awards, DMC ( April 08, 2021)</h6>
+            <h6>Best Medical Influencer Awards, DMC ( April 08, 2021)</h6>
             <p className="text-muted">
                 Best contribute in the national medication system, and influencing our students for their better future and also perticipating several social activities.
             </p>

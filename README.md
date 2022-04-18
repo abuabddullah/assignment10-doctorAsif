@@ -68,7 +68,7 @@ Live Sire link: [https://myassignment-10.web.app/](https://myassignment-10.web.a
 **_1) website টা বানাতে যতসব component লাগবে সবগ্যলা কে meaningfull হতে হবে কোন dummy text use করা যাবে না_** \
 [ DONE ] \
 **_2) README.MD file টা meaningfull হতে হবে + live website and git repo link থাকবে +  আর ৫টা bullet point দিয়ে project summary লিখতে হবে + যেই যেই library or framework(react,react-router,react-firebase,react-firebase-hook,react-bootstrap,react-fontawesome, toastify etc) use করা হয়েছে এই project তা লিখে দিতে হবে_** \
-[ NOT DONE ] \
+[ DONE ] \
 **_3) Home page টা must mobile and desktop এর জন্য responsieve করতে হবে_** \
 [ DONE ] \
 **_4) fileName,componentName,variableName,code everything meaningfull হতে হবে_** \
