@@ -11,7 +11,7 @@ Live Sire link: [https://myassignment-10.web.app/](https://myassignment-10.web.a
 * **To know about firebase authentication system for google login** : clicking Login with Google button at bellow will open a popup. there we can login with our existing gmail account.
 * **To know about react private route** : Clicking individual service providing by me will direct user to login page if not login yet after successfull login it will redirect user to the checkout page i.e checkout page is wrapped by private routing system 
 * **To know conditional rendering of toggling element depending on user existance** : if user already logged in he or she will see only the Logout button in the nav bar and vice-versa and and also if user dont checkout any service and directly hit **checkout** route from navbar will see a notice "no service selected" and a select option bar bellow but if he alredy selected any service then will see the **service ID** in the notice and **Cancel Checkout** in the navber 
-* To know about me and my goal : In the about route ther is something about me.
+* **To know about me and my goal** : In the about route ther is something about me.
 
 
 

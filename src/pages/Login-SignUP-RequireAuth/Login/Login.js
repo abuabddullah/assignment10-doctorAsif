@@ -39,14 +39,17 @@ const Login = () => {
         }
     }, [user, user4Google]);
 
+    // control error
+    useEffect(() => {
+        if (error || error4Google || error4PasswordReset) {
+            let message = error?.message || error4Google?.message || error4PasswordReset?.message;
+            toast.error(message, { id: 'error' });
+        }
+    }, [error, error4Google, error4PasswordReset]);
+
     // control loading
     if (loading || loading4Google || sending4PasswordReset) {
         return <Loading />
-    }
-
-    // control error
-    if (error || error4Google || error4PasswordReset) {
-        toast.error(error?.message);
     }
 
     // control form after submit button pressed

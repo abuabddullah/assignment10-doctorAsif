@@ -28,9 +28,7 @@ const NavigationBar = () => {
         toast.error(error.message);
     }
 
-    if (loading) {
-        return <Loading />
-    }
+    
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Container>
